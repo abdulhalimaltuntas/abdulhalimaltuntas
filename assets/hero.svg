@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 240" width="1000" height="240" role="img" aria-label="Abdulhalim Altuntas — Web Application Pentester">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B0E14"/>
+      <stop offset="55%" stop-color="#10131E"/>
+      <stop offset="100%" stop-color="#171130"/>
+    </linearGradient>
+
+    <linearGradient id="nameFill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E7ECF5"/>
+      <stop offset="52%" stop-color="#B3A6FF"/>
+      <stop offset="100%" stop-color="#3DDC97"/>
+    </linearGradient>
+
+    <linearGradient id="scanFill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9B8CFF" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#9B8CFF" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#CFC6FF" stop-opacity="0.9"/>
+      <stop offset="55%" stop-color="#9B8CFF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#9B8CFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9B8CFF" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#9B8CFF" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#3DDC97" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#3DDC97" stop-opacity="0"/>
+    </linearGradient>
+
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#161C28" stroke-width="1"/>
+    </pattern>
+
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <clipPath id="frame"><rect width="1000" height="240" rx="14"/></clipPath>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, "SFMono-Regular", "JetBrains Mono", Menlo, Consolas, monospace; }
+    .name { font-size: 52px; font-weight: 700; letter-spacing: 2px; }
+    .role { font-size: 16.5px; font-weight: 600; letter-spacing: 5.5px; fill: #8B94A8; }
+    .tag  { font-size: 12.5px; fill: #5D6779; letter-spacing: 1px; }
+    .term { font-size: 12.5px; fill: #6E7789; }
+    .ok   { fill: #3DDC97; }
+    .warn { fill: #E8A33D; }
+    .acc  { fill: #9B8CFF; }
+
+    .scan { animation: sweep 5.2s cubic-bezier(.4,0,.5,1) infinite; }
+    @keyframes sweep {
+      0%   { transform: translateX(-160px); opacity: 0; }
+      8%   { opacity: 1; }
+      92%  { opacity: 1; }
+      100% { transform: translateX(1010px); opacity: 0; }
+    }
+
+    .node { animation: pulse 3s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+    .n2 { animation-delay: .45s; } .n3 { animation-delay: .9s; }
+    .n4 { animation-delay: 1.35s; } .n5 { animation-delay: 1.8s; } .n6 { animation-delay: 2.25s; }
+    @keyframes pulse {
+      0%, 100% { opacity: .32; transform: scale(.75); }
+      50%      { opacity: 1;   transform: scale(1.45); }
+    }
+
+    .link { stroke-dasharray: 5 7; animation: flow 2.6s linear infinite; }
+    @keyframes flow { to { stroke-dashoffset: -48; } }
+
+    .cursor { animation: blink 1.05s steps(2, start) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+
+    .rise { animation: rise .9s cubic-bezier(.2,.8,.3,1) both; }
+    .d1 { animation-delay: .1s; } .d2 { animation-delay: .28s; } .d3 { animation-delay: .46s; }
+    @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+    .ruleGrow { animation: grow 1.2s cubic-bezier(.2,.8,.3,1) .5s both; transform-origin: 60px center; }
+    @keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+    @media (prefers-reduced-motion: reduce) {
+      .scan, .node, .link, .cursor, .rise, .ruleGrow { animation: none; }
+      .scan { opacity: .25; }
+    }
+  </style>
+
+  <g clip-path="url(#frame)">
+    <rect width="1000" height="240" fill="url(#bg)"/>
+    <rect width="1000" height="240" fill="url(#grid)" opacity="0.55"/>
+
+    <!-- saldiri yuzeyi grafigi: dugumler ve akan baglantilar -->
+    <g stroke="#2A3346" stroke-width="1" fill="none" opacity="0.85">
+      <path class="link" d="M812 62 L884 104"/>
+      <path class="link" d="M884 104 L826 158"/>
+      <path class="link" d="M826 158 L916 186"/>
+      <path class="link" d="M884 104 L950 74"/>
+      <path class="link" d="M812 62 L742 118"/>
+      <path class="link" d="M742 118 L826 158"/>
+    </g>
+    <g>
+      <circle class="node"    cx="812" cy="62"  r="3" fill="#9B8CFF"/>
+      <circle class="node n2" cx="884" cy="104" r="3" fill="#3DDC97"/>
+      <circle class="node n3" cx="826" cy="158" r="3" fill="#9B8CFF"/>
+      <circle class="node n4" cx="916" cy="186" r="3" fill="#E8A33D"/>
+      <circle class="node n5" cx="950" cy="74"  r="3" fill="#3DDC97"/>
+      <circle class="node n6" cx="742" cy="118" r="3" fill="#FF6B60"/>
+    </g>
+
+    <!-- terminal satiri -->
+    <g class="mono rise d1">
+      <text class="term" x="60" y="52">
+        <tspan class="acc">┌──(</tspan><tspan class="ok">halim</tspan><tspan class="term">@</tspan><tspan class="ok">recon</tspan><tspan class="acc">)─[</tspan><tspan class="term">~/engagements</tspan><tspan class="acc">]</tspan>
+      </text>
+      <text class="term" x="60" y="72" xml:space="preserve"><tspan class="acc">└─$</tspan><tspan class="term">&#160;map --surface --deep&#160;</tspan><tspan class="warn">target.tld</tspan><tspan class="cursor acc">&#160;▌</tspan></text>
+    </g>
+
+    <!-- isim -->
+    <text class="mono name rise d2" x="58" y="140" fill="url(#nameFill)">ABDULHALİM ALTUNTAŞ</text>
+
+    <!-- animasyonlu ayrac -->
+    <rect class="ruleGrow" x="60" y="156" width="560" height="2" rx="1" fill="url(#rule)"/>
+
+    <!-- rol -->
+    <text class="mono role rise d3" x="60" y="185">WEB APPLICATION PENTESTER</text>
+    <text class="mono tag rise d3" x="60" y="209">recon · access control · injection · api security · authorized testing only</text>
+
+    <!-- tarama cizgisi -->
+    <g class="scan">
+      <rect x="0" y="0" width="140" height="240" fill="url(#scanFill)" opacity="0.30"/>
+      <rect x="68" y="0" width="2" height="240" fill="#CFC6FF" opacity="0.85" filter="url(#soft)"/>
+    </g>
+
+    <!-- nisangah koseleri -->
+    <g stroke="#39415A" stroke-width="1.4" fill="none" opacity="0.9">
+      <path d="M14 30 L14 14 L30 14"/>
+      <path d="M986 30 L986 14 L970 14"/>
+      <path d="M14 210 L14 226 L30 226"/>
+      <path d="M986 210 L986 226 L970 226"/>
+    </g>
+    <rect x="0.5" y="0.5" width="999" height="239" rx="14" fill="none" stroke="#242C3C"/>
+  </g>
+</svg>
