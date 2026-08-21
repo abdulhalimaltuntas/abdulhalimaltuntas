@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 250" width="1000" height="250" role="img" aria-label="Where the engagement hours go">
+  <defs>
+    <linearGradient id="fb1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6D5BD0"/><stop offset="100%" stop-color="#9B8CFF"/>
+    </linearGradient>
+    <linearGradient id="fb2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9B8CFF"/><stop offset="100%" stop-color="#3DDC97"/>
+    </linearGradient>
+    <linearGradient id="fb3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2E9E77"/><stop offset="100%" stop-color="#3DDC97"/>
+    </linearGradient>
+    <linearGradient id="fb4" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#B07A26"/><stop offset="100%" stop-color="#E8A33D"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="f-frame"><rect width="1000" height="250" rx="12"/></clipPath>
+    <clipPath id="c1"><rect x="300" y="60" width="0" height="12" rx="6"><animate attributeName="width" from="0" to="558" dur="1.3s" begin="0.3s" fill="freeze"/></rect></clipPath>
+    <clipPath id="c2"><rect x="300" y="94" width="0" height="12" rx="6"><animate attributeName="width" from="0" to="520" dur="1.3s" begin="0.45s" fill="freeze"/></rect></clipPath>
+    <clipPath id="c3"><rect x="300" y="128" width="0" height="12" rx="6"><animate attributeName="width" from="0" to="486" dur="1.3s" begin="0.6s" fill="freeze"/></rect></clipPath>
+    <clipPath id="c4"><rect x="300" y="162" width="0" height="12" rx="6"><animate attributeName="width" from="0" to="430" dur="1.3s" begin="0.75s" fill="freeze"/></rect></clipPath>
+    <clipPath id="c5"><rect x="300" y="196" width="0" height="12" rx="6"><animate attributeName="width" from="0" to="372" dur="1.3s" begin="0.9s" fill="freeze"/></rect></clipPath>
+  </defs>
+
+  <style>
+    .m  { font-family: ui-monospace, "SFMono-Regular", "JetBrains Mono", Menlo, Consolas, monospace; }
+    .hd { font-size: 12px; font-weight: 700; letter-spacing: 3px; fill: #6E7789; }
+    .lb { font-size: 13px; fill: #C7D0E0; }
+    .vl { font-size: 11.5px; fill: #6E7789; }
+
+    .shine { animation: glide 3.4s ease-in-out infinite; }
+    @keyframes glide { 0% { transform: translateX(-120px); } 55%,100% { transform: translateX(620px); } }
+    .s2{animation-delay:.3s}.s3{animation-delay:.6s}.s4{animation-delay:.9s}.s5{animation-delay:1.2s}
+
+    @media (prefers-reduced-motion: reduce) { .shine { animation: none; opacity: 0; } }
+  </style>
+
+  <g clip-path="url(#f-frame)">
+    <rect width="1000" height="250" fill="#0B0E14"/>
+    <text class="m hd" x="34" y="34">WHERE THE ENGAGEMENT HOURS GO</text>
+    <line x1="34" y1="46" x2="966" y2="46" stroke="#1E2635"/>
+
+    <text class="m lb" x="34" y="70">Recon &amp; surface mapping</text>
+    <rect x="300" y="60" width="620" height="12" rx="6" fill="#151B27"/>
+    <rect x="300" y="60" width="558" height="12" rx="6" fill="url(#fb1)"><animate attributeName="width" from="0" to="558" dur="1.3s" begin="0.3s" fill="freeze"/></rect>
+    <g clip-path="url(#c1)"><rect class="shine" x="300" y="60" width="110" height="12" fill="url(#shine)"/></g>
+    <text class="m vl" x="936" y="70" text-anchor="start">90</text>
+
+    <text class="m lb" x="34" y="104">Access control &amp; business logic</text>
+    <rect x="300" y="94" width="620" height="12" rx="6" fill="#151B27"/>
+    <rect x="300" y="94" width="520" height="12" rx="6" fill="url(#fb2)"><animate attributeName="width" from="0" to="520" dur="1.3s" begin="0.45s" fill="freeze"/></rect>
+    <g clip-path="url(#c2)"><rect class="shine s2" x="300" y="94" width="110" height="12" fill="url(#shine)"/></g>
+    <text class="m vl" x="936" y="104">84</text>
+
+    <text class="m lb" x="34" y="138">Injection &amp; client-side attacks</text>
+    <rect x="300" y="128" width="620" height="12" rx="6" fill="#151B27"/>
+    <rect x="300" y="128" width="486" height="12" rx="6" fill="url(#fb3)"><animate attributeName="width" from="0" to="486" dur="1.3s" begin="0.6s" fill="freeze"/></rect>
+    <g clip-path="url(#c3)"><rect class="shine s3" x="300" y="128" width="110" height="12" fill="url(#shine)"/></g>
+    <text class="m vl" x="936" y="138">78</text>
+
+    <text class="m lb" x="34" y="172">Tooling &amp; automation</text>
+    <rect x="300" y="162" width="620" height="12" rx="6" fill="#151B27"/>
+    <rect x="300" y="162" width="430" height="12" rx="6" fill="url(#fb1)"><animate attributeName="width" from="0" to="430" dur="1.3s" begin="0.75s" fill="freeze"/></rect>
+    <g clip-path="url(#c4)"><rect class="shine s4" x="300" y="162" width="110" height="12" fill="url(#shine)"/></g>
+    <text class="m vl" x="936" y="172">69</text>
+
+    <text class="m lb" x="34" y="206">Reporting &amp; remediation</text>
+    <rect x="300" y="196" width="620" height="12" rx="6" fill="#151B27"/>
+    <rect x="300" y="196" width="372" height="12" rx="6" fill="url(#fb4)"><animate attributeName="width" from="0" to="372" dur="1.3s" begin="0.9s" fill="freeze"/></rect>
+    <g clip-path="url(#c5)"><rect class="shine s5" x="300" y="196" width="110" height="12" fill="url(#shine)"/></g>
+    <text class="m vl" x="936" y="206">60</text>
+
+    <text class="m vl" x="34" y="234">Relative time split across an engagement — not a certification score.</text>
+
+    <rect x="0.5" y="0.5" width="999" height="249" rx="12" fill="none" stroke="#1E2635"/>
+  </g>
+</svg>

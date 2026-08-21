@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 372" width="1000" height="372" role="img" aria-label="Recon pipeline demo: subfinder, httpx, ffuf and nuclei running against an authorized target">
+  <defs>
+    <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1A2030"/>
+      <stop offset="100%" stop-color="#141926"/>
+    </linearGradient>
+    <clipPath id="win"><rect width="1000" height="372" rx="12"/></clipPath>
+
+    <!-- Yazi makinesi maskeleri: rect genisligi 0'dan tam boya animasyonlu -->
+    <clipPath id="t1"><rect x="34" y="86" height="20" width="700">
+      <animate attributeName="width" from="0" to="700" dur="1.5s" begin="0.3s" fill="freeze" repeatCount="1"/>
+      <animate attributeName="width" values="0;700" dur="1.5s" begin="18.3s" fill="freeze" repeatCount="indefinite"/>
+    </rect></clipPath>
+    <clipPath id="t2"><rect x="34" y="188" height="20" width="700">
+      <animate attributeName="width" from="0" to="700" dur="1.4s" begin="5.4s" fill="freeze" repeatCount="1"/>
+      <animate attributeName="width" values="0;700" dur="1.4s" begin="23.4s" fill="freeze" repeatCount="indefinite"/>
+    </rect></clipPath>
+    <clipPath id="t3"><rect x="34" y="266" height="20" width="700">
+      <animate attributeName="width" from="0" to="700" dur="1.3s" begin="9.8s" fill="freeze" repeatCount="1"/>
+      <animate attributeName="width" values="0;700" dur="1.3s" begin="27.8s" fill="freeze" repeatCount="indefinite"/>
+    </rect></clipPath>
+  </defs>
+
+  <style>
+    .m { font-family: ui-monospace, "SFMono-Regular", "JetBrains Mono", Menlo, Consolas, monospace; font-size: 13.5px; }
+    .p   { fill: #9B8CFF; font-weight: 700; }
+    .cmd { fill: #C7D0E0; }
+    .flg { fill: #6E7789; }
+    .hst { fill: #E8A33D; }
+    .ok  { fill: #3DDC97; }
+    .wrn { fill: #E8A33D; }
+    .err { fill: #FF6B60; }
+    .dim { fill: #5D6779; }
+    .ttl { fill: #7D8698; font-size: 12px; letter-spacing: .5px; }
+
+    .out { animation: pop 18s ease-out infinite both; }
+    @keyframes pop {
+      0%   { opacity: 0; transform: translateY(5px); }
+      3%   { opacity: 1; transform: translateY(0); }
+      94%  { opacity: 1; }
+      99%  { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    .o1 { animation-delay: 2.0s; } .o2 { animation-delay: 2.3s; } .o3 { animation-delay: 2.6s; }
+    .o4 { animation-delay: 7.0s; } .o5 { animation-delay: 7.3s; }
+    .o6 { animation-delay: 11.4s; } .o7 { animation-delay: 11.9s; }
+
+    .cur { animation: blink 1.05s steps(2, start) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+
+    @media (prefers-reduced-motion: reduce) {
+      .out { animation: none; opacity: 1; }
+      .cur { animation: none; }
+    }
+  </style>
+
+  <g clip-path="url(#win)">
+    <rect width="1000" height="372" fill="#0B0E14"/>
+    <rect width="1000" height="40" fill="url(#chrome)"/>
+    <circle cx="24" cy="20" r="5.5" fill="#FF6B60"/>
+    <circle cx="44" cy="20" r="5.5" fill="#E8A33D"/>
+    <circle cx="64" cy="20" r="5.5" fill="#3DDC97"/>
+    <text class="m ttl" x="500" y="25" text-anchor="middle">halim@recon — ~/engagements/authorized — zsh</text>
+    <line x1="0" y1="40" x2="1000" y2="40" stroke="#232C3A"/>
+
+    <!-- 1. asama: alt alan adi kesfi -->
+    <g clip-path="url(#t1)">
+      <text class="m" x="34" y="101" xml:space="preserve"><tspan class="p">$</tspan><tspan class="cmd"> subfinder </tspan><tspan class="flg">-d</tspan><tspan class="hst"> target.tld </tspan><tspan class="flg">-silent</tspan><tspan class="cmd"> | </tspan><tspan class="cmd">httpx </tspan><tspan class="flg">-silent -title -status-code</tspan></text>
+    </g>
+    <text class="m out o1" x="34" y="125" xml:space="preserve"><tspan class="hst">  api.target.tld</tspan><tspan class="dim">        </tspan><tspan class="ok">[200]</tspan><tspan class="dim">  API Gateway</tspan></text>
+    <text class="m out o2" x="34" y="147" xml:space="preserve"><tspan class="hst">  admin.target.tld</tspan><tspan class="dim">      </tspan><tspan class="wrn">[403]</tspan><tspan class="dim">  Forbidden</tspan></text>
+    <text class="m out o3" x="34" y="169" xml:space="preserve"><tspan class="hst">  legacy.target.tld</tspan><tspan class="dim">     </tspan><tspan class="ok">[200]</tspan><tspan class="dim">  Legacy Portal</tspan></text>
+
+    <!-- 2. asama: icerik kesfi -->
+    <g clip-path="url(#t2)">
+      <text class="m" x="34" y="203" xml:space="preserve"><tspan class="p">$</tspan><tspan class="cmd"> ffuf </tspan><tspan class="flg">-u</tspan><tspan class="hst"> https://api.target.tld/FUZZ </tspan><tspan class="flg">-w api.txt -mc 200,401</tspan></text>
+    </g>
+    <text class="m out o4" x="34" y="227" xml:space="preserve"><tspan class="cmd">  /v1/users</tspan><tspan class="dim">             </tspan><tspan class="ok">[200]</tspan><tspan class="dim">  1.2 kB</tspan></text>
+    <text class="m out o5" x="34" y="249" xml:space="preserve"><tspan class="cmd">  /v1/internal/export</tspan><tspan class="dim">   </tspan><tspan class="wrn">[401]</tspan><tspan class="dim">  0.4 kB   &lt;-- undocumented</tspan></text>
+
+    <!-- 3. asama: zafiyet dogrulama -->
+    <g clip-path="url(#t3)">
+      <text class="m" x="34" y="281" xml:space="preserve"><tspan class="p">$</tspan><tspan class="cmd"> nuclei </tspan><tspan class="flg">-u</tspan><tspan class="hst"> https://legacy.target.tld </tspan><tspan class="flg">-severity high,critical</tspan></text>
+    </g>
+    <text class="m out o6" x="34" y="305" xml:space="preserve"><tspan class="err">  [high]</tspan><tspan class="cmd"> exposed-config</tspan><tspan class="dim">  ->  </tspan><tspan class="hst">legacy.target.tld/.env</tspan></text>
+    <text class="m out o7" x="34" y="327" xml:space="preserve"><tspan class="dim">  chain: undocumented export endpoint + leaked config = </tspan><tspan class="err">impact</tspan></text>
+
+    <text class="m" x="34" y="353" xml:space="preserve"><tspan class="p">$</tspan><tspan class="cur cmd"> ▌</tspan></text>
+
+    <rect x="0.5" y="0.5" width="999" height="371" rx="12" fill="none" stroke="#232C3A"/>
+  </g>
+</svg>
