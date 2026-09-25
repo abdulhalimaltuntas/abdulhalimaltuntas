@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="300" viewBox="0 0 960 300" fill="none" role="img" aria-labelledby="title desc" xml:lang="en">
-  <title id="title">Abdulhalim Altuntaş — Web Application Pentester</title>
-  <desc id="desc">Abdulhalim Altuntaş and his web application security focus on a navy background, with an abstract network of web, API and access points at right.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="300" viewBox="0 0 960 300" fill="none" role="img" aria-labelledby="title desc" xml:lang="tr">
+  <title id="title">Abdulhalim Altuntaş — Web Uygulama Sızma Testi Uzmanı</title>
+  <desc id="desc">Lacivert zemin üzerinde Abdulhalim Altuntaş’ın adı ve uzmanlık alanı; sağda web, API ve erişim noktalarını temsil eden soyut bir ağ diyagramı.</desc>
   <defs>
     <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0d1423"/>
@@ -24,11 +24,11 @@
 
     <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif">
       <rect x="48" y="45" width="24" height="3" rx="1.5" fill="#b7a8ff"/>
-      <text x="84" y="51" fill="#bdc6da" font-size="12" font-weight="600" letter-spacing="2.2">WEB &amp; API SECURITY</text>
+      <text x="84" y="51" fill="#bdc6da" font-size="12" font-weight="600" letter-spacing="2.2">WEB &amp; API GÜVENLİĞİ</text>
       <text x="46" y="130" fill="#f3f5fc" font-size="44" font-weight="700" letter-spacing="-1.5">Abdulhalim Altuntaş</text>
-      <text x="48" y="172" fill="#b8aaff" font-size="22" font-weight="400">Web Application Pentester</text>
+      <text x="48" y="172" fill="#b8aaff" font-size="22" font-weight="400">Web Uygulama Sızma Testi Uzmanı</text>
       <path d="M48 211H96" stroke="#3d4a62" stroke-width="2"/>
-      <text x="48" y="249" fill="#a6b3c9" font-size="11.5" font-weight="500" letter-spacing="1.1">RECON  /  ACCESS CONTROL  /  API SECURITY</text>
+      <text x="48" y="249" fill="#a6b3c9" font-size="11.5" font-weight="500" letter-spacing="1.1">KEŞİF  /  ERİŞİM KONTROLÜ  /  API GÜVENLİĞİ</text>
     </g>
 
     <!-- Abstract application surface: connected entry points around a central app. -->
@@ -58,7 +58,7 @@
       <circle cx="710" cy="66" r="3" fill="#b7a8ff" fill-opacity=".65"/>
       <circle cx="832" cy="231" r="2.5" fill="#8adbc5" fill-opacity=".6"/>
       <path d="M920 129H928M924 125V133" stroke="#7886a2" stroke-opacity=".5"/>
-      <text x="789" y="270" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="500" letter-spacing="2.3" fill="#8e9bb3">ATTACK SURFACE</text>
+      <text x="789" y="270" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="500" letter-spacing="2.3" fill="#8e9bb3">SALDIRI YÜZEYİ</text>
     </g>
     <rect x=".5" y=".5" width="959" height="299" rx="19.5" stroke="#2a354c"/>
   </g>

@@ -1,191 +1,86 @@
-<!--
-  GitHub profil README'si — Turkce surum.
-  Ana surum README.md; ikisi de assets/ altindaki elle yazilmis animasyonlu
-  SVG'leri kullanir.
--->
+<!-- README.md ve README.tr.md birbiriyle uyumlu tutulmalıdır. Kapak görselleri assets/ klasöründedir. -->
 
-<div align="center">
+<p align="right">
+  <a href="README.md">English</a> &nbsp; / &nbsp; <strong>Türkçe</strong>
+</p>
 
-[English](README.md) · **Türkçe**
+<p align="center">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/hero-mobile.tr.svg">
+    <img src="assets/hero.tr.svg" alt="Abdulhalim Altuntaş — Web Uygulama Sızma Testi Uzmanı" width="100%">
+  </picture>
+</p>
 
-<img src="https://raw.githubusercontent.com/abdulhalimaltuntas/abdulhalimaltuntas/main/assets/hero.svg" alt="Abdulhalim Altuntaş — Web Uygulama Sızma Testi Uzmanı" width="100%">
+<p align="center">
+  <a href="mailto:altuntashalim123@gmail.com">E-posta</a> &nbsp; · &nbsp;
+  <a href="https://github.com/abdulhalimaltuntas?tab=repositories">Projeler</a> &nbsp; · &nbsp;
+  <a href="https://instagram.com/halimaltuntas33">Instagram</a>
+</p>
 
-<br>
+## Hakkımda
 
-<a href="https://github.com/abdulhalimaltuntas">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1200&color=9B8CFF&center=true&vCenter=true&width=760&height=42&lines=Tek+bir+payload+denemeden+%C3%B6nce+y%C3%BCzeyi+haritalarim;Yetkilendirme+%C2%B7+enjeksiyon+%C2%B7+SSRF+%C2%B7+kimlik+do%C4%9Frulama;K%C3%BC%C3%A7%C3%BCk+bulgulari+zincirleyip+ger%C3%A7ek+etkiye+%C3%A7eviririm;Arac+yoksa+kendim+yazarim" alt="">
-</a>
+Ben **Abdulhalim**, **web ve API güvenliğine** odaklanan bir web uygulama sızma testi uzmanıyım. Uygulamaların kimlik, erişim ve veri yönetimini inceler; tekil zafiyetlerin oluşturduğu somut etkiyi ortaya koyarım.
 
-<br><br>
+Çalışmalarım saldırı yüzeyini anlamakla başlar, tekrarlanabilir bulgular ve uygulanabilir çözüm önerileriyle tamamlanır. Testleri daha sistematik ve tekrarlanabilir hâle getirmek için araçlar ve otomasyonlar geliştiririm.
 
-<img src="https://komarev.com/ghpvc/?username=abdulhalimaltuntas&label=PROF%C4%B0L+G%C3%96R%C3%9CNT%C3%9CLENME&color=9b8cff&style=for-the-badge" alt="">
-<img src="https://img.shields.io/badge/ODAK-WEB%20%26%20API-3DDC97?style=for-the-badge" alt="">
-<img src="https://img.shields.io/badge/KAPSAM-YALNIZCA%20YETK%C4%B0L%C4%B0-E8A33D?style=for-the-badge" alt="">
+> Uygulamayı anla. Etkiyi doğrula. Çözümü uygulanabilir kıl.
 
-</div>
+## Odak alanlarım
 
-<img src="https://raw.githubusercontent.com/abdulhalimaltuntas/abdulhalimaltuntas/main/assets/divider.svg" width="100%" alt="">
+| Alan | İncelediğim konular |
+| :--- | :--- |
+| **Erişim kontrolü** | Yetkilendirme açıkları, IDOR / BOLA ve yetki sınırları. |
+| **Kimlik doğrulama ve oturumlar** | Giriş akışları, token işleme, JWT doğrulama ve oturum yönetimi. |
+| **Enjeksiyon ve sunucu tarafı açıkları** | Enjeksiyon, SSRF ve güvenilmeyen girdilerin uygulama bileşenleri arasındaki akışı. |
+| **İş mantığı ve API'ler** | İş akışı suistimalleri, belgelenmemiş uç noktalar ve REST / GraphQL davranışları. |
 
-## `~/kimim`
+## Çalışma yaklaşımım
 
-```console
-$ id --pentester
+1. **Kapsamı belirle** — yazılı yetkiyi, sınırları ve testin hedeflerini netleştir.
+2. **Uygulamayı haritala** — varlıkları, uç noktaları, parametreleri ve istemci tarafındaki davranışları keşfet.
+3. **Test et ve doğrula** — erişim kontrollerini, girdi işlemeyi, kimlik doğrulamayı ve iş mantığını incele.
+4. **Bulguları ilişkilendir** — tekil zafiyetlerin nasıl birleştiğini araştır ve somut etkilerini göster.
+5. **Çözüm odaklı raporla** — tekrarlanabilir adımları belgele, riskleri önceliklendir ve çözüm önerilerini açıkla.
 
-  rol       Web uygulama sızma testi uzmanı
-  avlanma   Kırık erişim kontrolü · IDOR/BOLA · enjeksiyon · SSRF
-            Kimlik doğrulama ve oturum açıkları · iş mantığı istismarı
-  yöntem    Önce yüzeyi haritala, sonra zararsız görüneni zincirle.
-            Argüman etkidir — gerisi teferruat.
-  raporlama Geliştiricinin gerçekten uygulayabileceği raporlar.
-  kural     Her zaman yazılı yetki. İstisnasız.
-```
+## Araç setim
 
-İlgi çekici zafiyet, nadiren tarayıcının bulduğudur. Asıl olan; dokümantasyona hiç girmemiş endpoint, kimsenin kontrol etmeyi akıl etmediği nesne kimliği, ödeme sayfasında sessizce çalışan üçüncü taraf script'idir. Önce tüm yüzeyi çıkarır, sonra dikiş yerlerinde çalışırım — ihtiyacım olan araç yoksa yazarım.
+| Amaç | Temel araçlar |
+| :--- | :--- |
+| **Keşif** | `Nmap` · `subfinder` · `httpx` · `katana` · `ffuf` |
+| **Web ve API testleri** | `Burp Suite` · `OWASP ZAP` · `Nuclei` · `Postman` |
+| **Trafik analizi** | `Wireshark` · `tcpdump` · `mitmproxy` |
+| **Betik geliştirme ve otomasyon** | `Python` · `JavaScript` · `Bash` |
+| **Geliştirme ortamı** | `Linux` · `Docker` · `Git` · `VS Code` |
 
-<img src="https://raw.githubusercontent.com/abdulhalimaltuntas/abdulhalimaltuntas/main/assets/divider.svg" width="100%" alt="">
-
-## `~/metodoloji`
-
-<div align="center">
-
-| `01` | `02` | `03` | `04` | `05` |
-|:---:|:---:|:---:|:---:|:---:|
-| **KAPSAM** | **HARİTALA** | **SINA** | **ZİNCİRLE** | **RAPORLA** |
-| Yetki ve<br>sınırların tespiti | Varlıklar, endpoint'ler,<br>parametreler, JS yüzeyi | Erişim kontrolü, enjeksiyon,<br>kimlik doğrulama, mantık | Düşük önem →<br>gerçek etki | Tekrarlanabilir,<br>düzeltilebilir, önceliklendirilmiş |
-
-<br>
-
-<img src="https://raw.githubusercontent.com/abdulhalimaltuntas/abdulhalimaltuntas/main/assets/terminal.svg" alt="Recon zinciri: subfinder, httpx, ffuf ve nuclei — sonunda zincirlenmiş bir bulgu" width="100%">
-
-</div>
-
-<img src="https://raw.githubusercontent.com/abdulhalimaltuntas/abdulhalimaltuntas/main/assets/divider.svg" width="100%" alt="">
-
-## `~/kapsam`
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/abdulhalimaltuntas/abdulhalimaltuntas/main/assets/owasp.svg" alt="OWASP Top 10 2021 — kategori bazında çalışma derinliği" width="100%">
-
-<br><br>
-
-<img src="https://raw.githubusercontent.com/abdulhalimaltuntas/abdulhalimaltuntas/main/assets/focus.svg" alt="Bir testte zamanın recon, test, araç geliştirme ve raporlama arasındaki dağılımı" width="100%">
-
-</div>
-
-<img src="https://raw.githubusercontent.com/abdulhalimaltuntas/abdulhalimaltuntas/main/assets/divider.svg" width="100%" alt="">
-
-## `~/cephanelik`
-
-<div align="center">
-
-### Keşif & saldırı yüzeyi haritalama
-
-![Nmap](https://img.shields.io/badge/Nmap-2E5E8C?style=for-the-badge&logo=nmap&logoColor=white)
-![Amass](https://img.shields.io/badge/Amass-1B5E20?style=for-the-badge&logoColor=white)
-![subfinder](https://img.shields.io/badge/subfinder-6D5BD0?style=for-the-badge&logoColor=white)
-![httpx](https://img.shields.io/badge/httpx-6D5BD0?style=for-the-badge&logoColor=white)
-![katana](https://img.shields.io/badge/katana-6D5BD0?style=for-the-badge&logoColor=white)
-![ffuf](https://img.shields.io/badge/ffuf-1E1E1E?style=for-the-badge&logoColor=white)
-![gobuster](https://img.shields.io/badge/gobuster-1E1E1E?style=for-the-badge&logoColor=white)
-![waybackurls](https://img.shields.io/badge/waybackurls-37474F?style=for-the-badge&logoColor=white)
-![Shodan](https://img.shields.io/badge/Shodan-C0392B?style=for-the-badge&logo=shodan&logoColor=white)
-
-### Web & API testi
-
-![Burp Suite](https://img.shields.io/badge/Burp%20Suite-FF6633?style=for-the-badge&logo=burpsuite&logoColor=white)
-![OWASP ZAP](https://img.shields.io/badge/OWASP%20ZAP-000000?style=for-the-badge&logo=owasp&logoColor=white)
-![Nuclei](https://img.shields.io/badge/Nuclei-9B8CFF?style=for-the-badge&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
-![DevTools](https://img.shields.io/badge/DevTools-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)
-
-### İstismar & sonrası
-
-![sqlmap](https://img.shields.io/badge/sqlmap-B71C1C?style=for-the-badge&logoColor=white)
-![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=for-the-badge&logo=metasploit&logoColor=white)
-![XSStrike](https://img.shields.io/badge/XSStrike-AD1457?style=for-the-badge&logoColor=white)
-![Hydra](https://img.shields.io/badge/Hydra-455A64?style=for-the-badge&logoColor=white)
-![Hashcat](https://img.shields.io/badge/Hashcat-37474F?style=for-the-badge&logoColor=white)
-![John](https://img.shields.io/badge/John%20the%20Ripper-37474F?style=for-the-badge&logoColor=white)
-
-### Ağ & analiz
-
-![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)
-![tcpdump](https://img.shields.io/badge/tcpdump-455A64?style=for-the-badge&logoColor=white)
-![mitmproxy](https://img.shields.io/badge/mitmproxy-8E24AA?style=for-the-badge&logoColor=white)
-![OpenVPN](https://img.shields.io/badge/OpenVPN-EA7E20?style=for-the-badge&logo=openvpn&logoColor=white)
-
-### Geliştirme & otomasyon
-
-<img src="https://skillicons.dev/icons?i=python,js,bash,linux,docker,git,github,nodejs,html,css,mysql,vscode&theme=dark&perline=12" alt="">
-
-</div>
-
-<img src="https://raw.githubusercontent.com/abdulhalimaltuntas/abdulhalimaltuntas/main/assets/divider.svg" width="100%" alt="">
-
-## `~/istatistik`
-
-<div align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=abdulhalimaltuntas&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&locale=tr&bg_color=0D1117&title_color=9B8CFF&text_color=9AA5BA&icon_color=3DDC97&ring_color=9B8CFF" alt="">
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=abdulhalimaltuntas&layout=compact&hide_border=true&langs_count=8&locale=tr&bg_color=0D1117&title_color=9B8CFF&text_color=9AA5BA" alt="">
-
-<br><br>
-
-<img src="https://streak-stats.demolab.com?user=abdulhalimaltuntas&locale=tr&hide_border=true&background=0D1117&stroke=232C3A&ring=9B8CFF&fire=E8A33D&currStreakLabel=9B8CFF&sideLabels=9AA5BA&dates=67718A&currStreakNum=E7ECF5&sideNums=E7ECF5" alt="">
-
-<br><br>
-
-<img src="https://github-profile-trophy.vercel.app/?username=abdulhalimaltuntas&theme=darkhub&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8" alt="">
-
-<br><br>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=abdulhalimaltuntas&bg_color=0D1117&color=9B8CFF&line=3DDC97&point=E8A33D&area=true&area_color=6D5BD0&hide_border=true&radius=8" width="100%" alt="">
-
-</div>
-
-<img src="https://raw.githubusercontent.com/abdulhalimaltuntas/abdulhalimaltuntas/main/assets/divider.svg" width="100%" alt="">
-
-## `~/katkilar`
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/abdulhalimaltuntas/abdulhalimaltuntas/main/profile-3d-contrib/profile-night-rainbow.svg" alt="İzometrik 3B katkı grafiği" width="100%">
+<details>
+<summary><strong>Diğer araçlar ve teknolojiler</strong></summary>
 
 <br>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/abdulhalimaltuntas/abdulhalimaltuntas/output/snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/abdulhalimaltuntas/abdulhalimaltuntas/output/snake.svg">
-  <img alt="Katkı yılanı" src="https://raw.githubusercontent.com/abdulhalimaltuntas/abdulhalimaltuntas/output/snake.svg">
-</picture>
+| Amaç | Araçlar ve teknolojiler |
+| :--- | :--- |
+| **Varlık ve kaynak keşfi** | Amass, gobuster, waybackurls, Shodan |
+| **Hedefe yönelik testler** | sqlmap, XSStrike, Metasploit |
+| **Parola güvenliği denetimi** | Hydra, Hashcat, John the Ripper |
+| **API ve tarayıcı incelemesi** | GraphQL, JWT, tarayıcı geliştirici araçları |
+| **Geliştirme ve altyapı** | Node.js, HTML, CSS, MySQL, GitHub, OpenVPN |
 
-</div>
+</details>
 
-<img src="https://raw.githubusercontent.com/abdulhalimaltuntas/abdulhalimaltuntas/main/assets/divider.svg" width="100%" alt="">
+## Projeler ve geliştirme
 
-## `~/iletisim`
+Projelerimi ve geliştirme çalışmalarımı GitHub üzerinden inceleyebilirsin.
 
-<div align="center">
+**[Projelerimi incele →](https://github.com/abdulhalimaltuntas?tab=repositories)** &nbsp; · &nbsp; [GitHub etkinliği](https://github.com/abdulhalimaltuntas?tab=overview)
 
-<a href="mailto:altuntashalim123@gmail.com">
-  <img src="https://img.shields.io/badge/E--posta-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="E-posta">
-</a>
-<a href="https://instagram.com/halimaltuntas33">
-  <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
-</a>
-<a href="https://github.com/abdulhalimaltuntas">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-</a>
+## İletişim
 
-<br><br>
+Web güvenliği, test metodolojisi veya güvenlik araçları üzerine konuşmak için:
 
-<sub>Burada gösterilen ve anlatılan tüm çalışmalar, sahibi olduğum ya da test etmek için yazılı yetki aldığım sistemler üzerinde yürütülür.</sub>
+**[altuntashalim123@gmail.com](mailto:altuntashalim123@gmail.com)**
 
-<br>
+[GitHub](https://github.com/abdulhalimaltuntas) &nbsp; · &nbsp; [Instagram](https://instagram.com/halimaltuntas33)
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:9B8CFF,50:6D5BD0,100:0B0E14&height=130&section=footer" width="100%" alt="">
+---
 
-</div>
+<sub>Tüm güvenlik testleri, sahibi olduğum veya test etmek için yazılı yetki aldığım sistemlerde gerçekleştirilir.</sub>
