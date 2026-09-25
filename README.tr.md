@@ -1,86 +1,132 @@
-<!-- README.md ve README.tr.md birbiriyle uyumlu tutulmalıdır. Kapak görselleri assets/ klasöründedir. -->
+<!-- Artwork sources: assets/src/. Portable font outlines: scripts/outline_svg.py. -->
 
 <p align="right">
-  <a href="README.md">English</a> &nbsp; / &nbsp; <strong>Türkçe</strong>
+  <sub><a href="README.md">ENGLISH</a> &nbsp; / &nbsp; <strong>TÜRKÇE</strong></sub>
 </p>
 
 <p align="center">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/hero-mobile.tr.svg">
-    <img src="assets/hero.tr.svg" alt="Abdulhalim Altuntaş — Web Uygulama Sızma Testi Uzmanı" width="100%">
+    <img src="assets/hero.tr.svg" alt="Abdulhalim Altuntaş — Web Uygulama Sızma Testi Uzmanı. Web ve API güvenliği, keşif ve güvenlik araçları." width="100%">
   </picture>
 </p>
 
 <p align="center">
-  <a href="mailto:altuntashalim123@gmail.com">E-posta</a> &nbsp; · &nbsp;
-  <a href="https://github.com/abdulhalimaltuntas?tab=repositories">Projeler</a> &nbsp; · &nbsp;
-  <a href="https://instagram.com/halimaltuntas33">Instagram</a>
+  <a href="mailto:altuntashalim123@gmail.com"><img src="assets/link-email.tr.svg" alt="E-posta" width="144" height="38"></a>
+  <a href="https://github.com/abdulhalimaltuntas?tab=repositories"><img src="assets/link-projects.tr.svg" alt="Projelerimi incele" width="144" height="38"></a>
+  <a href="https://instagram.com/halimaltuntas33"><img src="assets/link-instagram.svg" alt="Instagram" width="144" height="38"></a>
 </p>
 
-## Hakkımda
+<h3 align="center">Uygulamaların zayıf noktalarını keşfeder, güvenli hâle gelmelerine katkı sağlarım.</h3>
 
-Ben **Abdulhalim**, **web ve API güvenliğine** odaklanan bir web uygulama sızma testi uzmanıyım. Uygulamaların kimlik, erişim ve veri yönetimini inceler; tekil zafiyetlerin oluşturduğu somut etkiyi ortaya koyarım.
+<p align="center">
+  Ben <strong>Abdulhalim</strong>, <strong>web ve API güvenliğine</strong> odaklanan bir web uygulama sızma testi uzmanıyım.<br>Erişim kontrolü, kimlik doğrulama, enjeksiyon ve iş mantığı üzerine çalışıyorum.<br>Saldırı yüzeyini haritalar, etkiyi doğrular ve testleri tekrarlanabilir kılan araçlar geliştiririm.
+</p>
 
-Çalışmalarım saldırı yüzeyini anlamakla başlar, tekrarlanabilir bulgular ve uygulanabilir çözüm önerileriyle tamamlanır. Testleri daha sistematik ve tekrarlanabilir hâle getirmek için araçlar ve otomasyonlar geliştiririm.
+<p align="center"><img src="assets/divider.svg" width="100%" alt=""></p>
 
-> Uygulamayı anla. Etkiyi doğrula. Çözümü uygulanabilir kıl.
+<a name="expertise"></a>
 
-## Odak alanlarım
-
-| Alan | İncelediğim konular |
-| :--- | :--- |
-| **Erişim kontrolü** | Yetkilendirme açıkları, IDOR / BOLA ve yetki sınırları. |
-| **Kimlik doğrulama ve oturumlar** | Giriş akışları, token işleme, JWT doğrulama ve oturum yönetimi. |
-| **Enjeksiyon ve sunucu tarafı açıkları** | Enjeksiyon, SSRF ve güvenilmeyen girdilerin uygulama bileşenleri arasındaki akışı. |
-| **İş mantığı ve API'ler** | İş akışı suistimalleri, belgelenmemiş uç noktalar ve REST / GraphQL davranışları. |
-
-## Çalışma yaklaşımım
-
-1. **Kapsamı belirle** — yazılı yetkiyi, sınırları ve testin hedeflerini netleştir.
-2. **Uygulamayı haritala** — varlıkları, uç noktaları, parametreleri ve istemci tarafındaki davranışları keşfet.
-3. **Test et ve doğrula** — erişim kontrollerini, girdi işlemeyi, kimlik doğrulamayı ve iş mantığını incele.
-4. **Bulguları ilişkilendir** — tekil zafiyetlerin nasıl birleştiğini araştır ve somut etkilerini göster.
-5. **Çözüm odaklı raporla** — tekrarlanabilir adımları belgele, riskleri önceliklendir ve çözüm önerilerini açıkla.
-
-## Araç setim
-
-| Amaç | Temel araçlar |
-| :--- | :--- |
-| **Keşif** | `Nmap` · `subfinder` · `httpx` · `katana` · `ffuf` |
-| **Web ve API testleri** | `Burp Suite` · `OWASP ZAP` · `Nuclei` · `Postman` |
-| **Trafik analizi** | `Wireshark` · `tcpdump` · `mitmproxy` |
-| **Betik geliştirme ve otomasyon** | `Python` · `JavaScript` · `Bash` |
-| **Geliştirme ortamı** | `Linux` · `Docker` · `Git` · `VS Code` |
+<p align="center">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/expertise-mobile.tr.svg">
+    <img src="assets/expertise.tr.svg" alt="Uzmanlık alanlarım: erişim kontrolü ve IDOR/BOLA; kimlik doğrulama, oturumlar ve JWT; enjeksiyon ve XSS; SSRF; API güvenliği ve iş mantığı; keşif ve otomasyon." width="100%">
+  </picture>
+</p>
 
 <details>
-<summary><strong>Diğer araçlar ve teknolojiler</strong></summary>
+<summary><strong>Teknik odak alanlarımı incele</strong></summary>
 
-<br>
-
-| Amaç | Araçlar ve teknolojiler |
-| :--- | :--- |
-| **Varlık ve kaynak keşfi** | Amass, gobuster, waybackurls, Shodan |
-| **Hedefe yönelik testler** | sqlmap, XSStrike, Metasploit |
-| **Parola güvenliği denetimi** | Hydra, Hashcat, John the Ripper |
-| **API ve tarayıcı incelemesi** | GraphQL, JWT, tarayıcı geliştirici araçları |
-| **Geliştirme ve altyapı** | Node.js, HTML, CSS, MySQL, GitHub, OpenVPN |
+- **Erişim kontrolü** — yetkilendirme açıkları, IDOR / BOLA ve yetki sınırları.
+- **Kimlik doğrulama** — giriş akışları, token işleme, JWT doğrulama ve oturum yönetimi.
+- **Enjeksiyon** — SQL enjeksiyonu, XSS ve güvenilmeyen girdilerin işlenmesi.
+- **SSRF** — sunucu tarafındaki istekler ve servisler arasındaki güven sınırları.
+- **API ve iş mantığı** — REST / GraphQL, belgelenmemiş uç noktalar ve iş akışı suistimalleri.
+- **Keşif ve otomasyon** — varlık keşfi, uç nokta haritalama ve Python / Bash araçları.
 
 </details>
 
-## Projeler ve geliştirme
+<br>
 
-Projelerimi ve geliştirme çalışmalarımı GitHub üzerinden inceleyebilirsin.
+<a name="methodology"></a>
 
-**[Projelerimi incele →](https://github.com/abdulhalimaltuntas?tab=repositories)** &nbsp; · &nbsp; [GitHub etkinliği](https://github.com/abdulhalimaltuntas?tab=overview)
+<p align="center">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/workflow-mobile.tr.svg">
+    <img src="assets/workflow.tr.svg" alt="Çalışma yaklaşımım: kapsam ve yazılı yetkiyi belirle; varlıkları ve uç noktaları haritala; test et ve doğrula; bulguları somut etkileriyle ilişkilendir; tekrarlanabilir adımları ve çözüm önerilerini raporla." width="100%">
+  </picture>
+</p>
 
-## İletişim
+<p align="center">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/terminal-mobile.tr.svg">
+    <img src="assets/terminal.tr.svg" alt="Yetkili bir testin iş akışını gösteren animasyon: kapsam, keşif, erişim kontrolü, etki doğrulama ve raporlama. Bu bir iş akışı önizlemesidir; canlı tarama veya gerçek bulgu değildir." width="100%">
+  </picture>
+</p>
 
-Web güvenliği, test metodolojisi veya güvenlik araçları üzerine konuşmak için:
+<p align="center"><img src="assets/divider.svg" width="100%" alt=""></p>
 
-**[altuntashalim123@gmail.com](mailto:altuntashalim123@gmail.com)**
+<a name="toolkit"></a>
 
-[GitHub](https://github.com/abdulhalimaltuntas) &nbsp; · &nbsp; [Instagram](https://instagram.com/halimaltuntas33)
+<p align="center">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/toolkit-mobile.tr.svg">
+    <img src="assets/toolkit.tr.svg" alt="Araçlar ve teknolojiler: Python, Bash, JavaScript, Linux, Docker, Git, Burp Suite, Nmap, Wireshark, Nuclei, Postman ve ffuf." width="100%">
+  </picture>
+</p>
 
----
+<details>
+<summary><strong>Tüm araç setini görüntüle</strong></summary>
 
-<sub>Tüm güvenlik testleri, sahibi olduğum veya test etmek için yazılı yetki aldığım sistemlerde gerçekleştirilir.</sub>
+| Çalışma alanı | Araçlar ve teknolojiler |
+| :--- | :--- |
+| **Keşif** | Nmap, Amass, subfinder, httpx, katana, ffuf, gobuster, waybackurls, Shodan |
+| **Web ve API testleri** | Burp Suite, OWASP ZAP, Nuclei, Postman, GraphQL, JWT, tarayıcı geliştirici araçları |
+| **Hedefe yönelik testler** | sqlmap, XSStrike, Metasploit |
+| **Parola güvenliği** | Hydra, Hashcat, John the Ripper |
+| **Trafik ve ağ analizi** | Wireshark, tcpdump, mitmproxy, OpenVPN |
+| **Betik ve uygulama geliştirme** | Python, JavaScript, Bash, Node.js, HTML, CSS, MySQL |
+| **Çalışma ortamı** | Linux, Docker, Git, GitHub, VS Code |
+
+</details>
+
+<br>
+
+<h3 align="center">GITHUB ÜZERİNDE</h3>
+<p align="center">Kodlar, denemeler ve katkılar.</p>
+
+<p align="center">
+  <a href="https://github.com/abdulhalimaltuntas?tab=repositories"><strong>Projelerimi incele ↗</strong></a>
+  &nbsp; · &nbsp;
+  <a href="https://github.com/abdulhalimaltuntas?tab=overview">GitHub etkinliğim</a>
+</p>
+
+<p align="center">
+  <img src="profile-3d-contrib/profile-night-rainbow.svg" alt="GitHub katkılarımın izometrik görünümü." width="100%">
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/abdulhalimaltuntas/abdulhalimaltuntas/output/snake-dark.svg">
+    <img src="https://raw.githubusercontent.com/abdulhalimaltuntas/abdulhalimaltuntas/output/snake.svg" alt="GitHub katkı geçmişimi takip eden yılan animasyonu." width="100%">
+  </picture>
+</p>
+
+<p align="center"><img src="assets/divider.svg" width="100%" alt=""></p>
+
+<a name="contact"></a>
+
+<p align="center">
+  <a href="mailto:altuntashalim123@gmail.com">
+    <picture>
+      <source media="(max-width: 600px)" srcset="assets/footer-mobile.tr.svg">
+      <img src="assets/footer.tr.svg" alt="Güvenliği konuşalım. Web güvenliği, test metodolojisi ve araç geliştirme. Abdulhalim Altuntaş’a e-posta gönder." width="100%">
+    </picture>
+  </a>
+</p>
+
+<p align="center">
+  <a href="mailto:altuntashalim123@gmail.com"><strong>altuntashalim123@gmail.com</strong></a>
+  <br><br>
+  <sub>Tüm güvenlik testleri, sahibi olduğum veya test etmek için yazılı yetki aldığım sistemlerde gerçekleştirilir.</sub>
+</p>

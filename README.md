@@ -1,86 +1,132 @@
-<!-- Keep README.md and README.tr.md in sync. All header artwork lives in assets/. -->
+<!-- Artwork sources: assets/src/. Portable font outlines: scripts/outline_svg.py. -->
 
 <p align="right">
-  <strong>English</strong> &nbsp; / &nbsp; <a href="README.tr.md">Türkçe</a>
+  <sub><strong>ENGLISH</strong> &nbsp; / &nbsp; <a href="README.tr.md">TÜRKÇE</a></sub>
 </p>
 
 <p align="center">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/hero-mobile.svg">
-    <img src="assets/hero.svg" alt="Abdulhalim Altuntaş — Web Application Pentester" width="100%">
+    <img src="assets/hero.svg" alt="Abdulhalim Altuntaş — Web Application Pentester. Web and API security, reconnaissance, and security tooling." width="100%">
   </picture>
 </p>
 
 <p align="center">
-  <a href="mailto:altuntashalim123@gmail.com">Email</a> &nbsp; · &nbsp;
-  <a href="https://github.com/abdulhalimaltuntas?tab=repositories">Projects</a> &nbsp; · &nbsp;
-  <a href="https://instagram.com/halimaltuntas33">Instagram</a>
+  <a href="mailto:altuntashalim123@gmail.com"><img src="assets/link-email.svg" alt="Email" width="144" height="38"></a>
+  <a href="https://github.com/abdulhalimaltuntas?tab=repositories"><img src="assets/link-projects.svg" alt="Explore repositories" width="144" height="38"></a>
+  <a href="https://instagram.com/halimaltuntas33"><img src="assets/link-instagram.svg" alt="Instagram" width="144" height="38"></a>
 </p>
 
-## About
+<h3 align="center">I explore how applications break — and how to make them stronger.</h3>
 
-I'm **Abdulhalim**, a web application penetration tester focused on **web and API security**. I investigate how applications handle identity, access, and data, then connect individual weaknesses to their practical impact.
+<p align="center">
+  I'm <strong>Abdulhalim</strong>, a web application penetration tester focused on <strong>web &amp; API security</strong>.<br>Access control, authentication, injection, and business logic are at the center of my work.<br>I map the attack surface, validate the impact, and build tools to make testing repeatable.
+</p>
 
-My work starts with understanding the attack surface and ends with reproducible findings and clear remediation guidance. Along the way, I build tools and automation to make testing more precise and repeatable.
+<p align="center"><img src="assets/divider.svg" width="100%" alt=""></p>
 
-> Understand the application. Validate the impact. Make the fix actionable.
+<a name="expertise"></a>
 
-## Security focus
-
-| Area | What I investigate |
-| :--- | :--- |
-| **Access control** | Broken authorization, IDOR / BOLA, and privilege boundaries. |
-| **Authentication & sessions** | Login flows, token handling, JWT validation, and session management. |
-| **Injection & server-side flaws** | Injection, SSRF, and the way untrusted input crosses application boundaries. |
-| **Business logic & APIs** | Workflow abuse, undocumented endpoints, and REST / GraphQL behavior. |
-
-## How I work
-
-1. **Define the scope** — establish authorization, boundaries, and the objectives of the assessment.
-2. **Map the application** — discover assets, endpoints, parameters, and client-side behavior.
-3. **Test and validate** — examine access controls, input handling, authentication, and business logic.
-4. **Connect the findings** — explore how individual weaknesses combine and demonstrate their impact.
-5. **Report for remediation** — document reproducible steps, prioritize risk, and explain how to fix it.
-
-## Toolkit
-
-| Purpose | Core tools |
-| :--- | :--- |
-| **Reconnaissance** | `Nmap` · `subfinder` · `httpx` · `katana` · `ffuf` |
-| **Web & API testing** | `Burp Suite` · `OWASP ZAP` · `Nuclei` · `Postman` |
-| **Traffic analysis** | `Wireshark` · `tcpdump` · `mitmproxy` |
-| **Scripting & automation** | `Python` · `JavaScript` · `Bash` |
-| **Development environment** | `Linux` · `Docker` · `Git` · `VS Code` |
+<p align="center">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/expertise-mobile.svg">
+    <img src="assets/expertise.svg" alt="Security expertise: access control and IDOR/BOLA; authentication, sessions and JWT; injection and XSS; SSRF; API security and business logic; reconnaissance and automation." width="100%">
+  </picture>
+</p>
 
 <details>
-<summary><strong>More tools & technologies</strong></summary>
+<summary><strong>Explore my technical focus</strong></summary>
 
-<br>
-
-| Purpose | Tools & technologies |
-| :--- | :--- |
-| **Discovery & enumeration** | Amass, gobuster, waybackurls, Shodan |
-| **Targeted testing** | sqlmap, XSStrike, Metasploit |
-| **Credential auditing** | Hydra, Hashcat, John the Ripper |
-| **API & browser inspection** | GraphQL, JWT, browser DevTools |
-| **Development & infrastructure** | Node.js, HTML, CSS, MySQL, GitHub, OpenVPN |
+- **Access control** — broken authorization, IDOR / BOLA, and privilege boundaries.
+- **Authentication** — login flows, token handling, JWT validation, and session management.
+- **Injection** — SQL injection, XSS, and the way applications handle untrusted input.
+- **SSRF** — server-side requests and trust boundaries between services.
+- **APIs & business logic** — REST / GraphQL, undocumented endpoints, and workflow abuse.
+- **Reconnaissance & automation** — asset discovery, endpoint mapping, and Python / Bash tooling.
 
 </details>
 
-## Projects & development
+<br>
 
-Explore my repositories and follow my development activity on GitHub.
+<a name="methodology"></a>
 
-**[Explore my repositories →](https://github.com/abdulhalimaltuntas?tab=repositories)** &nbsp; · &nbsp; [GitHub activity](https://github.com/abdulhalimaltuntas?tab=overview)
+<p align="center">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/workflow-mobile.svg">
+    <img src="assets/workflow.svg" alt="My methodology: define scope and authorization; map assets and endpoints; test and validate; connect findings to their impact; report reproducible steps and remediation." width="100%">
+  </picture>
+</p>
 
-## Get in touch
+<p align="center">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/terminal-mobile.svg">
+    <img src="assets/terminal.svg" alt="Animated illustration of an authorized assessment workflow: scope, map, inspect access controls, validate impact, and prepare a report. This is a workflow preview, not a live scan or an actual finding." width="100%">
+  </picture>
+</p>
 
-For conversations about web security, testing methodology, or security tooling:
+<p align="center"><img src="assets/divider.svg" width="100%" alt=""></p>
 
-**[altuntashalim123@gmail.com](mailto:altuntashalim123@gmail.com)**
+<a name="toolkit"></a>
 
-[GitHub](https://github.com/abdulhalimaltuntas) &nbsp; · &nbsp; [Instagram](https://instagram.com/halimaltuntas33)
+<p align="center">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/toolkit-mobile.svg">
+    <img src="assets/toolkit.svg" alt="Tools and technologies: Python, Bash, JavaScript, Linux, Docker, Git, Burp Suite, Nmap, Wireshark, Nuclei, Postman, and ffuf." width="100%">
+  </picture>
+</p>
 
----
+<details>
+<summary><strong>Open the complete toolkit</strong></summary>
 
-<sub>All security testing is carried out on systems I own or have written authorization to assess.</sub>
+| Discipline | Tools & technologies |
+| :--- | :--- |
+| **Reconnaissance** | Nmap, Amass, subfinder, httpx, katana, ffuf, gobuster, waybackurls, Shodan |
+| **Web & API testing** | Burp Suite, OWASP ZAP, Nuclei, Postman, GraphQL, JWT, browser DevTools |
+| **Targeted testing** | sqlmap, XSStrike, Metasploit |
+| **Credential auditing** | Hydra, Hashcat, John the Ripper |
+| **Traffic & networks** | Wireshark, tcpdump, mitmproxy, OpenVPN |
+| **Scripting & development** | Python, JavaScript, Bash, Node.js, HTML, CSS, MySQL |
+| **Environment** | Linux, Docker, Git, GitHub, VS Code |
+
+</details>
+
+<br>
+
+<h3 align="center">BUILDING IN PUBLIC</h3>
+<p align="center">Code, experiments, and contributions.</p>
+
+<p align="center">
+  <a href="https://github.com/abdulhalimaltuntas?tab=repositories"><strong>Explore repositories ↗</strong></a>
+  &nbsp; · &nbsp;
+  <a href="https://github.com/abdulhalimaltuntas?tab=overview">View GitHub activity</a>
+</p>
+
+<p align="center">
+  <img src="profile-3d-contrib/profile-night-rainbow.svg" alt="An isometric view of my public GitHub contributions." width="100%">
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/abdulhalimaltuntas/abdulhalimaltuntas/output/snake-dark.svg">
+    <img src="https://raw.githubusercontent.com/abdulhalimaltuntas/abdulhalimaltuntas/output/snake.svg" alt="Animated snake following my GitHub contribution history." width="100%">
+  </picture>
+</p>
+
+<p align="center"><img src="assets/divider.svg" width="100%" alt=""></p>
+
+<a name="contact"></a>
+
+<p align="center">
+  <a href="mailto:altuntashalim123@gmail.com">
+    <picture>
+      <source media="(max-width: 600px)" srcset="assets/footer-mobile.svg">
+      <img src="assets/footer.svg" alt="Let’s talk security. Web security, testing methodology, and tooling. Email Abdulhalim Altuntaş." width="100%">
+    </picture>
+  </a>
+</p>
+
+<p align="center">
+  <a href="mailto:altuntashalim123@gmail.com"><strong>altuntashalim123@gmail.com</strong></a>
+  <br><br>
+  <sub>All security testing is carried out on systems I own or have written authorization to assess.</sub>
+</p>
